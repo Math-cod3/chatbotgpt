@@ -1,26 +1,29 @@
 {
-  "name": "bot-zdg",
+  "name": "bot-gpt",
   "version": "1.0.0",
-  "description": "bot-zdg: based on Whatsapp API",
+  "description": "prototype for the pharmabot",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "start:dev": "nodemon app.js",
+    "start:multi": "nodemon app-multiple-device.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "whatsapp-api",
     "node.js"
   ],
-  "author": "Pedro",
+  "author": "Matheus Araujo",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.20.0",
+    "dotenv": "^16.3.1",
     "express": "^4.17.1",
     "express-fileupload": "^1.2.0",
     "express-validator": "^6.9.2",
     "http": "0.0.1-security",
     "mime-types": "^2.1.32",
+    "openai": "^3.3.0",
     "qrcode": "^1.4.4",
     "socket.io": "2.3.0",
     "whatsapp-web.js": "^1.20.0"
