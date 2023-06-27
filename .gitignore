@@ -1,5 +1,7 @@
 node_modules
 whatsapp-session*.json
 package-lock.json
+.wwebjs_auth
+.wwebjs_cache
 downloaded-media/
 .env
