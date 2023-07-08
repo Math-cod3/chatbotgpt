@@ -178,7 +178,6 @@ client.on('message', async msg => {
 });
 const fs = require('fs');
 const path = require('path');
-require('../.wwebjs_cache')
 
 process.on('end', () =>{
 const folder = path.join(__dirname, '../.wwebjs_auth')

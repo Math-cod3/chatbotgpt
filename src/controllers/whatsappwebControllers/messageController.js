@@ -1,7 +1,7 @@
 const client = require('../../config/whatsapp-web')
 const commands = require('../../controllers/openAIControllers/commandControllers')
 
-client.on('message', async msg => {
+ async function handleMessage(msg){
 
     const nomeContato = msg._data.notifyName;
     const content = `mensagem de:${nomeContato}\n\r${msg.body}`
@@ -41,6 +41,6 @@ client.on('message', async msg => {
   
       console.log(contact)
     }
-  });
+  }
 
-module.exports = client
+module.exports = handleMessage
