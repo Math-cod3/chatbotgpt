@@ -4,8 +4,9 @@
   "description": "prototype for the pharmabot",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "start:dev": "nodemon app.js",
+    "start": "node ./src/app.js",
+    "start:dev": "nodemon ./src/app.js",
+    "rout": "nodemon ./src/routes.js",
     "start:multi": "nodemon app-multiple-device.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +24,7 @@
     "express-validator": "^6.9.2",
     "http": "0.0.1-security",
     "mime-types": "^2.1.32",
+    "mocha": "^10.2.0",
     "openai": "^3.3.0",
     "qrcode": "^1.4.4",
     "socket.io": "2.3.0",
