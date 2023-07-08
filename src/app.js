@@ -184,7 +184,12 @@ process.on('end', () =>{
 const folder = path.join(__dirname, '../.wwebjs_auth')
 const folder2 = path.join(__dirname, '../.wwebjs_cache')
 
-fs.unlink(folder)
+fs.rmdir()(folder, folder2, (err)=>{
+  if(error) console.log('Ocorreu um erro')
+
+  console.log('removido com sucesso!')
+
+})
 })
 
 server.listen(port, function() {
