@@ -1,5 +1,10 @@
 const axios = require('axios')
 
+const headers = {
+    'Authorization': `Bearer ${process.env.OPENAI_KEY}`,
+    'Content-Type': 'application/json'
+}
+
 const axiosInstance = axios.create({
     baseURL: 'https://api.openai.com/',
     timeout: 120000,

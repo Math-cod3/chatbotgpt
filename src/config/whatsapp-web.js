@@ -1,4 +1,4 @@
-const { Client, MessageMedia } = require('whatsapp-web.js');
+const { Client } = require('whatsapp-web.js');
 
 require('dotenv').config()
 
@@ -17,7 +17,7 @@ const config = {
         '--disable-gpu'
       ],
     },
-    session: sessionCfg
+  
   }
 
 const client = new Client(config)
