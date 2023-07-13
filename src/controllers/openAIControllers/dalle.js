@@ -1,7 +1,7 @@
 const axios = require('axios')
 
 const headers = {
-    'Authorization': `Bearer ${process.env.OPENAI_KEY}`,
+    'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
     'Content-Type': 'application/json'
 }
 

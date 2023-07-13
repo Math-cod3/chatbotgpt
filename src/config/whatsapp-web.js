@@ -1,7 +1,5 @@
 const { Client } = require('whatsapp-web.js');
 
-require('dotenv').config()
-
 const config = {
     restartOnAuthFail: true,
     puppeteer: {
