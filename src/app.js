@@ -2,7 +2,6 @@
 const { Client, LocalAuth } = require('whatsapp-web.js');
 // express imports
 const express = require('express');
-const { body, validationResult } = require('express-validator');
 const app = express();
 const fileUpload = require('express-fileupload');
 

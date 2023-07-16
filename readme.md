@@ -1,4 +1,4 @@
-# PharmaBot prototype
+# GPT Chatbot
 
 ### How to use?
 

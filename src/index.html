@@ -63,7 +63,6 @@
 
 			socket.once('message', function(msg) {
 				$('.logs').append($('<li>').text(msg));
-				$('#qrcode').attr('src', './public/loading-gif.gif')
 			});
 
 			socket.on('qr', function(src) {
@@ -84,8 +83,6 @@
 				$('.logs').hide(firstChild); 
 			}
 			
-
-
 			socket.on('authenticated', function(data) {
 				$('#qrcode').hide();
 			});

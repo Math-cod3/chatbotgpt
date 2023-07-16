@@ -3,21 +3,13 @@ const getDalleResponse = require('../../controllers/openAIControllers/dalle')
 const getDavinciResponse = require('../../controllers/openAIControllers/davinci')
 const { MessageMedia } = require('whatsapp-web.js');
 
-
-
  async function handleMessage(message){
   const iaCommands = {
       davinci3: "/bot",
       dalle: "/img",
   }
   let firstWord = message.body.substring(0, message.body.indexOf(" "))
- /*
-  * Faremos uma validação no message.from
-  * para caso a gente envie um comando
-  * a response não seja enviada para
-  * nosso próprio número e sim para 
-  * a pessoa ou grupo para o qual eu enviei
-  */
+
   const sender = message.from.includes(process.env.PHONE_NUMBER) ? message.to : message.from
   switch (firstWord) {
       case iaCommands.davinci3:
